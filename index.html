@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Debt Collection Company</title>
+  <style>
+    html{
+      scroll-behavior: smooth;
+    }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: white;
+      color: #333;
+      scroll-behavior: smooth;
+    }
+
+     body:before {
+          content: "";
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+      url('thumbnails/HDCAA.jpg');
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      filter: blur(2px);
+      z-index: -1; 
+      margin: 0px;
+      margin-right: 0px;
+        }
+
+        @media (max-width: 480px) {
+      body:before {
+        background-size: contain;  /* keeps full image visible */
+      }
+    }
+
+    header {
+      background-color: orange;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    header p {
+      margin: 5px 0 0;
+      font-size: 1.2em;
+    }
+
+    section {
+      padding: 40px;
+      text-align: center;
+    }
+
+    .intro {
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .intro h2 {
+      color: orange;
+      font-size: 2em;
+      margin-bottom: 15px;
+    }
+
+    .highlight-container {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      margin-top: 40px;
+      
+    }
+
+    .highlight {
+      background-color: #f8f8f8;
+      padding: 20px;
+      border-radius: 60px;
+      width: 300px;
+      margin: 10px;
+      box-shadow: -7px 15px 9px rgba(151, 120, 25, 0.5);
+    }
+
+    .highlight h3 {
+      color: orange;
+      margin-bottom: 10px;
+    }
+
+    .cta {
+      margin-bottom: 50px;
+    }
+
+    .cta button {
+      background-color: orange;
+      color: white;
+      padding: 20px 35px;
+      font-size: 1.2em;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .cta button:hover {
+      background-color: #cc6e00;
+    }
+
+    .butts{
+      box-shadow:-10px 10px 6px rgba(146, 135, 103, 0.5);
+    }
+
+
+    .butts a{
+      color: white;
+      text-decoration: none;
+     
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1 style="font-family: abril fatface;
+    font-size: 2rem;" >HEKIMA DEBT COLLECTION AND AUCTIONEERS
+    </h1>
+    <p style="font-style: italic;">Professional. Compliant. Reliable.</p>
+  </header>
+
+  
+
+  <div style="display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 50px;
+  ">
+  
+  <button class="butts" style="display: block;
+  margin: auto;
+  color: white;
+  background-color: orange;
+  border-radius: 30px;
+  padding: 20px;
+  border: none;
+  text-decoration: none;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-family: abril fatface;
+  width: 170px;
+  cursor: pointer;"><a href="#about">
+    ABOUT US
+  </a></button>
+  
+
+  <button class="butts" style="display: inline-block;
+  margin: auto;
+   color: white;
+  background-color: orange;
+  border-radius: 30px;
+  padding: 20px;
+  border: none;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-family: abril fatface;
+  width: 170px;
+  cursor: pointer;"><a href="#certs">
+    CERTIFICATES
+  </a></button>
+
+
+   <button class="butts" style="display: inline-block;
+  margin: auto; color: white;
+  background-color: orange;
+  border-radius: 30px;
+  padding: 20px;
+  border: none;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-family: abril fatface;
+  width: 170px;
+  cursor: pointer;"><a href="#services">
+    OUR SERVICES
+  </a></button>
+
+
+   <button class="butts" style="display: inline-block;
+  margin: auto; color: white;
+  background-color: orange;
+  border-radius: 30px;
+  padding: 20px;
+  margin-bottom: 20px;
+  border: none;
+  font-weight: bold;
+  font-family: abril fatface;
+  width: 170px;
+  cursor: pointer;"><a href="#faqs">
+    FAQs
+  </a></button>
+
+   <button class="butts" style="display: inline-block;
+  margin: auto; color: white;
+  background-color: orange;
+  border-radius: 30px;
+  padding: 20px;
+  border: none;
+  font-weight: bold;
+  font-family: abril fatface;
+  width: 170px;
+  cursor: pointer;"><a href="#contacts">
+    CONTACTS
+  </a></button>
+
+
+  <button class="butts" style="display: inline-block;
+  margin: auto; color: white;
+  background-color: orange;
+  border-radius: 30px;
+  padding: 20px;
+  border: none;
+  font-weight: bold;
+  font-family: abril fatface;
+  width: 170px;
+  cursor: pointer;"><a href="#location">
+    LOCATION
+  </a></button>
+
+  </div>
+
+
+
+  <section class="intro">
+    <h2 style="font-family: abril fatface; ">WHO ARE WE?</h2>
+    <p style="font-size: 1.2em; color: white;"> 
+      We are HEKIMA DEBT COLLECTION AND AUCTIONEERS, A professional debt collection company committed to helping businesses and Financial Institutions recover outstanding debts 
+      with integrity, transparency, and strict compliance with industry standards. Our mission is to provide 
+      ethical collection services that protect your reputation while delivering results.
+    </p>
+  </section>
+
+  <section>
+    <h2 style="color: orange;
+    font-size: 2em;
+    font-family: abril fatface;">
+      WHAT DEFINES US BEST
+    </h2>
+    <div class="highlight-container">
+      <div class="highlight">
+        <h3 style="font-size: 1.5rem;
+        font-family: abril fatface;">TRUST</h3>
+        <div>
+          <img style="height: 200px;;
+        width: 250px;;
+        margin: auto;
+        display: block;
+        border-radius: 20px;" src="thumbnails/trust.jpg">
+          <p>
+          </div>We build long-term relationships with our clients through honesty and reliability.</p>
+      </div>
+      <div class="highlight">
+        <h3 style="font-size: 1.5rem;
+        font-family: abril fatface;">PROFESSIONALISM</h3>
+        <div>
+          <img style="height: 200px;;
+        width: 250px;;
+        margin: auto;
+        display: block;
+        border-radius: 20px;" src="thumbnails/professionalism.jpg">
+        <p>Our team of experts ensures every case is handled with care and expertise.</p>
+        </div>
+      </div>
+      <div class="highlight">
+        <h3 style="font-size: 1.5rem;
+        font-family: abrill fatface;">COMPLIANCE</h3>
+        <div>
+          <img style="height: 180px;;
+        width: 250px;
+        margin: auto;
+        display: block;
+        border-radius: 20px;" src="thumbnails/compliance.webp">
+        <p>We strictly adhere to legal and ethical guidelines in all our debt collection practices.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+   <a href="https://wa.me/255788296274" target="_blank"><button style="border-radius: 30px;
+   font-weight: bold;
+   font-family: abril fatface;
+   ">GET STARTED TODAY</button></a>
+  </section>
+
+  <!-- ABOUT SECTION -->
+<section id="about" style="padding:60px 20px; ">
+  <div style="max-width:1000px; margin:auto;">
+
+    <!-- Company Story -->
+    <h2 id="about" style="color:orange; text-align:center; 
+    font-family: abril fatface;
+    font-size:2.2em;">ABOUT US</h2>
+    <p style="text-align:center; max-width:800px; margin:20px auto; font-size:1.1em; line-height:1.6; color: white;">
+      Our company was founded with the mission of providing ethical, efficient, and reliable debt collection services. 
+      With years of experience, we have built a reputation for professionalism, strict compliance, 
+      and respect for both our clients and their customers.
+    </p>
+
+    <!-- Mission & Vision -->
+    <div style="display:flex; flex-wrap:wrap; justify-content:space-around; margin-top:40px;">
+      <div style="flex:1; min-width:280px; margin:10px; padding:20px; background:white; border-radius:10px; box-shadow: 0 9px 6px rgba(151, 120, 25, 0.5);">
+        <h3 style="color:orange;
+        font-family: abril fatface;">OUR MISSION</h3>
+        <p>To help businesses recover debts in a fair, professional, and compliant manner while protecting client reputation and relationships.</p>
+      </div>
+      <div style="flex:1; min-width:280px; margin:10px; padding:20px; background:white; border-radius:10px; box-shadow: 0 9px 6px rgba(151, 120, 25, 0.5);">
+        <h3 style="color:orange;
+        font-family: abril fatface;">OUR VISION</h3>
+        <p>To be the most trusted and ethical debt collection company in the region, setting standards in professionalism and compliance.</p>
+      </div>
+    </div>
+
+    <!-- Values -->
+    <h3 style="color:orange; text-align:center; margin-top:60px; font-family: abril fatface;
+    font-size: 2.2em;">OUR CORE VALUES</h3>
+      <div style="flex:1; min-width:280px; margin:10px; padding:20px; background:white; border-radius:10px; box-shadow: 0 9px 6px rgba(151, 120, 25, 0.5);">
+        <h4 style="color: orange;
+         font-family: abril fatface;">PROFESSIONALISM</h4>
+        <p>We handle every case with integrity, respect, and expert knowledge.</p>
+      </div>
+      <div style="flex:1; min-width:280px; margin:10px; padding:20px; background:white; border-radius:10px; box-shadow: 0 9px 6px rgba(151, 120, 25, 0.5);">
+        <h4 style="color: orange; font-family: abril fatface;">COMPLIANCE</h4>
+        <p>All our practices strictly follow legal and regulatory frameworks.</p>
+      </div>
+      <div style="flex:1; min-width:280px; margin:10px; padding:20px; background:white; border-radius:10px; box-shadow: 0 9px 6px rgba(151, 120, 25, 0.5);">
+        <h4 style="color: orange; font-family: abril fatface;">CONFIDENTIALITY</h4>
+        <p>We prioritize the privacy and protection of client and customer data.</p>
+      </div>
+    </div>
+
+    <!-- Team / Leadership -->
+    <section>
+      <h2 id="about" style="color:orange; text-align:center; 
+    font-family: abril fatface;
+    font-size:2.2em;">OUR TEAM</h2>
+    <div class="highlight-container">
+      <div class="highlight">
+        <h3 style="font-size: 1.3rem; font-family: abril fatface;">CHIEF EXECUTIVE </h3>
+        <div>
+          <img style="height: 200px;
+        width: 250px;;
+        margin: auto;
+        border-radius: 20px;
+        display: block;" src="thumbnails/466847816_1338869173943114_8466886222967000287_n.jpg">
+          <p style="font-weight: bold; font-family: abril fatface;">MICHAEL SMITH</p>
+      </div>
+      </div>
+      <div class="highlight">
+        <h3 style="font-size: 1.3rem; font-family: abril fatface;">COMPLIANCE OFFICER</h3>
+        <div>
+          <img style="height: 200px;
+        width: 250px;;
+        margin: auto;
+        border-radius: 20px;
+        display: block;" src="thumbnails/491444201_18490968328016097_414118690802544555_n.jpg">
+        <p style="font-weight: bold; font-family: abril fatface;">COLLINS RICHARD</p>
+        </div>
+      </div>
+      <div class="highlight">
+        <h3 style="font-size: 1.3rem; font-family: abril fatface;">OPERATIONS MANAGER</h3>
+        <div>
+          <img style="height: 200px;
+        width: 250px;
+        margin: auto;
+        border-radius: 20px;
+        display: block;" src="thumbnailS/IMG_0520.JPG">
+        <p style="font-weight: bold; font-family: abril fatface;">DAVID BROWN</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- Certifications -->
+    <h3 id="certs" style="color:orange; text-align:center; margin-top:60px;font-size: 2.2em; font-family: abril fatface;">CERTIFICATIONS & MEMBERSHIPS</h3>
+    <div style="display:flex; flex-wrap:wrap; justify-content:center; margin-top:20px;">
+      <div style="margin:15px; padding:20px; background:white; border-radius:10px; box-shadow: 0 9px 6px rgba(151, 120, 25, 0.5);">
+        <h4 style="font-family: abril fatface;">ISO 9001 CERTIFIED</h4>
+        <p>Quality Management Standards</p>
+        <a href="cert1.html" target="_blank"><button style="border-radius: 30px;
+   padding: 20px;
+   border: none;
+   background-color: orange;
+   color: white;
+   font-weight: bold;
+   cursor: pointer; font-family: abril fatface;">VIEW CERTIFICATE</button>
+   </a>
+      </div>
+      <div style="margin:15px; padding:20px; background:white; border-radius:10px; box-shadow: 0 9px 6px rgba(151, 120, 25, 0.5);">
+        <h4 style="font-family: abril fatface;">MEMBER OF ACA</h4>
+        <p>Association of Credit & Collection Professionals</p>
+        <a href="cert2.html" target="_blank"><button style="border-radius: 30px;
+   padding: 20px;
+   border: none;
+   background-color: orange;
+   color: white;
+   font-weight: bold;
+   cursor: pointer; font-family: abril fatface;">VIEW CERTIFICATE</button>
+   </a>
+      </div>
+      <div style="margin:15px; padding:20px; background:white; border-radius:10px; box-shadow: 0 9px 6px rgba(151, 120, 25, 0.5);">
+        <h4 style="font-family: abril fatface;">LICENSED BY REGULATORS</h4>
+        <p>Fully licensed to operate in compliance with national laws</p>
+        <a href="cert3.html" target="_blank"><button style="border-radius: 30px;
+   padding: 20px;
+   border: none;
+   background-color: orange;
+   color: white;
+   font-weight: bold;
+   cursor: pointer; font-family: abril fatface;">VIEW CERTIFICATE</button>
+   </a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- SERVICES SECTION -->
+<section id="services" style="padding:60px 20px; ">
+  <div style="max-width:1000px; margin:auto;">
+
+    <h2 style="color:orange; text-align:center; font-size:2.2em;font-family: abril fatface;">OUR SERVICES</h2>
+    <p style="text-align:center; max-width:800px; margin:20px auto; font-size:1.1em; line-height:1.6; color: white;">
+      We provide comprehensive debt collection solutions designed to help businesses recover outstanding debts efficiently, 
+      maintain compliance, and safeguard customer relationships. Our tailored services include:
+    </p>
+
+    <div style="display:flex; flex-wrap:wrap; justify-content:space-around; margin-top:40px;">
+      
+      <!-- Debt Recovery -->
+      <div style="flex:1; min-width:250px; margin:15px; padding:25px; background:#f9f9f9; border-radius:10px;box-shadow: 0 9px 6px rgba(151, 120, 25, 0.5); ">
+        <h3 style="color:orange;
+        font-family: abril fatface;">DEBT RECOVERY</h3>
+        <p>We specialize in recovering overdue debts while ensuring ethical and professional interactions with debtors.</p>
+      </div>
+
+      <!-- Legal Collections Support -->
+      <div style="flex:1; min-width:250px; margin:15px; padding:25px; background:#f9f9f9; border-radius:10px;box-shadow: 0 9px 6px rgba(151, 120, 25, 0.5); ">
+        <h3 style="color:orange;
+        font-family: abril fatface;">LEGAL COLLECTIONS SUPPORT</h3>
+        <p>Our team collaborates with legal professionals to provide documentation, advice, and assistance for court proceedings.</p>
+      </div>
+
+      <!-- Skip Tracing -->
+      <div style="flex:1; min-width:250px; margin:15px; padding:25px; background:#f9f9f9; border-radius:10px; box-shadow: 0 9px 6px rgba(151, 120, 25, 0.5);">
+        <h3 style="color:orange;
+        font-family: abril fatface;">SKIP TRACING / DEBTOR LOCATION</h3>
+        <p>We use advanced tools and methods to locate hard-to-find debtors, ensuring maximum recovery for your business.</p>
+      </div>
+
+      <!-- Credit Control -->
+      <div style="flex:1; min-width:250px; margin:15px; padding:25px; background:#f9f9f9; border-radius:10px; box-shadow: 0 9px 6px rgba(151, 120, 25, 0.5);">
+        <h3 style="color:orange;
+        font-family: abril fatface;">CREDIT CONTROL & ACCOUNTS RECEIVABLE</h3>
+        <p>We help businesses manage their accounts receivable and improve cash flow with effective credit control strategies.</p>
+      </div>
+
+      <!-- Custom Solutions -->
+      <div style="flex:1; min-width:250px; margin:15px; padding:25px; background:#f9f9f9; border-radius:10px; box-shadow: 0 9px 6px rgba(151, 120, 25, 0.5);">
+        <h3 style="color:orange;
+        font-family: abril fatface;">CUSTOM SOLUTIONS</h3>
+        <p>We design tailor-made debt collection strategies to meet the unique needs of your business and industry.</p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- INDUSTRIES SECTION -->
+<section id="industries" style="padding:60px 20px; ">
+  <div style="max-width:1000px; margin:auto;">
+
+    <h2 style="color:orange; text-align:center; 
+    font-family: abril fatface; font-size:2.2em;">INDUSTRIES WE SERVE</h2>
+    <p style="text-align:center; max-width:800px; margin:20px auto; font-size:1.1em; line-height:1.6; color: white;">
+      Our expertise in debt collection and recovery services spans across multiple industries. 
+      We tailor our solutions to the unique challenges and regulations of each sector.
+    </p>
+
+    <div style="display:flex; flex-wrap:wrap; justify-content:space-around; margin-top:40px;">
+      
+      <!-- Banking and Finance -->
+      <div style="flex:1; min-width:250px; margin:15px; padding:25px; background:white; border-radius:10px; box-shadow: 0 9px 6px rgba(151, 120, 25, 0.5); text-align:center;">
+        <h3 style="color:orange; font-family: abril fatface;">BANKING & FINANCE</h3>
+        <p>Trusted collection services for banks, microfinance institutions, and credit providers.</p>
+      </div>
+
+      <!-- Healthcare -->
+      <div style="flex:1; min-width:250px; margin:15px; padding:25px; background:white; border-radius:10px; box-shadow: 0 9px 6px rgba(151, 120, 25, 0.5); text-align:center;">
+        <h3 style="color:orange; font-family: abril fatface;">HEALTHCARE & HOSPITALS</h3>
+        <p>Helping healthcare providers recover outstanding patient and insurance balances with care.</p>
+      </div>
+
+      <!-- Retail and E-Commerce -->
+      <div style="flex:1; min-width:250px; margin:15px; padding:25px; background:white; border-radius:10px; box-shadow: 0 9px 6px rgba(151, 120, 25, 0.5); text-align:center;">
+        <h3 style="color:orange; font-family: abril fatface;">RETAIL & E-COMMERCE</h3>
+        <p>Recovery solutions for retailers, online shops, and distributors with overdue accounts.</p>
+      </div>
+
+      <!-- Utilities & Telecoms -->
+      <div style="flex:1; min-width:250px; margin:15px; padding:25px; background:white; border-radius:10px; box-shadow: 0 9px 6px rgba(151, 120, 25, 0.5); text-align:center;">
+        <h3 style="color:orange; font-family: abril fatface;">UTILITIES & TELECOMS</h3>
+        <p>Debt collection for water, power, internet, and telecom service providers.</p>
+      </div>
+
+      <!-- SMEs & Corporates -->
+      <div style="flex:1; min-width:250px; margin:15px; padding:25px; background:white; border-radius:10px; box-shadow: 0 9px 6px rgba(151, 120, 25, 0.5); text-align:center;">
+        <h3 style="color:orange; font-family: abril fatface;">SMEs & CORPORATES</h3>
+        <p>Custom debt recovery strategies to support small businesses and large corporations.</p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<section>
+    <h2 style="color: orange;
+    font-size: 2em;
+    font-family: abril fatface;">
+      OUR PARTNERSHIPS.
+    </h2>
+    <div class="highlight-container">
+      <div class="highlight">
+        <h3 style="font-size: 1.5rem;
+        font-family: abril fatface;">NATIONAL MICROFINANCE BANK</h3>
+        <div>
+          <img style="height: 200px;;
+        width: 250px;;
+        margin: auto;
+        display: block;
+        border-radius: 20px;" src="thumbnails/NMB.png">
+          <p>
+          </div>We build long-term relationships with our clients through honesty and reliability.</p>
+      </div>
+      <div class="highlight">
+        <h3 style="font-size: 1.5rem;
+        font-family: abril fatface;">COOPERATIVE AND RURAL DEVELOPMENT BANK</h3>
+        <div>
+          <img style="height: 200px;;
+        width: 250px;;
+        margin: auto;
+        display: block;
+        border-radius: 20px;" src="thumbnails/crdb.png">
+        <p>Our team of experts ensures every case is handled with care and expertise.</p>
+        </div>
+      </div>
+      <div class="highlight">
+        <h3 style="font-size: 1.5rem;
+        font-family: abrill fatface;">NATIONAL BANK OF COMMERCE</h3>
+        <div>
+          <img style="height: 180px;;
+        width: 250px;
+        margin: auto;
+        display: block;
+        border-radius: 20px;" src="thumbnails/nbc.webp">
+        <p>We strictly adhere to legal and ethical guidelines in all our debt collection practices.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- RESOURCES / FAQ SECTION -->
+<section id="faqs" style="padding:60px 20px;">
+  <div style="max-width:900px; margin:auto;">
+    
+    <h2 style="color:orange; text-align:center; font-size:2.2em;font-family: abril fatface;">RESOURCES & FAQs</h2>
+    <p style="text-align:center; max-width:700px; margin:20px auto; font-size:1.1em; line-height:1.6; color: white;">
+      We believe in transparency. Here are some resources and common questions to help clients 
+      and debtors understand the debt collection process, rights, and available solutions.
+    </p>
+
+    <!-- FAQ Item 1 -->
+    <details style="margin:15px 0; border-radius:8px; overflow:hidden; box-shadow: 0 9px 6px rgba(151, 120, 25, 0.5); padding: 30px; margin-bottom: 2em; background-color: white;">
+      <summary style=" cursor:pointer; padding:15px; font-weight:bold; color:#333; font-size: 1.1em; color: orange;">
+        Debt Collection Process for Clients & Debtors
+      </summary>
+      <p style="padding:15px; margin:0; background:#fff; line-height:1.6; font-size: 1.1em;">
+        For clients, our process begins with account review and contacting debtors through professional communication. 
+        We prioritize voluntary repayment and structured payment plans.  
+        For debtors, the process starts with a notice, followed by opportunities to settle or negotiate before 
+        any legal action is considered.
+      </p>
+    </details>
+
+    <!-- FAQ Item 2 -->
+    <details style="margin:15px 0; border-radius:8px; overflow:hidden; box-shadow: 0 9px 6px rgba(151, 120, 25, 0.5); padding: 30px; margin-bottom: 2em; background-color: white;">
+      <summary style="cursor:pointer; padding:15px; font-weight:bold; color: orange; font-size: 1.1em;">
+        Debtor Rights and Obligations
+      </summary>
+      <p style="padding:15px; margin:0; background:#fff; line-height:1.6; font-size: 1.1em;">
+        Debtors have the right to fair treatment, accurate debt information, and privacy. 
+        They cannot be harassed or misled.  
+        At the same time, debtors are obligated to repay valid debts and maintain open, honest communication 
+        when arranging payment or settlement plans.
+      </p>
+    </details>
+
+    <!-- FAQ Item 3 -->
+    <details style="margin:15px 0; border-radius:8px; overflow:hidden; box-shadow: 0 9px 6px rgba(151, 120, 25, 0.5); padding: 30px; background-color: white;">
+      <summary style=" cursor:pointer; padding:15px; font-weight:bold; color:orange; font-size: 1.1rem;">
+        Guidance on Disputes, Payments, and Settlements
+      </summary>
+      <p style="padding:15px; margin:0; background:#fff; line-height:1.6;">
+        Disputes are reviewed promptly with supporting documentation.  
+        Payments can be made directly or through structured repayment schedules.  
+        Settlements may be negotiated where clients accept partial repayment as final resolution.  
+        All processes are handled transparently and in compliance with regulations.
+      </p>
+    </details>
+
+  </div>
+</section>
+
+<!-- LEGALS & COMPLIANCE SECTION -->
+<section id="legals" style="padding:60px 20px; ">
+  <div style="max-width:1000px; margin:auto;">
+
+    <h2 style="color:orange; text-align:center; font-size:2.2em;font-family: abril fatface;">LEGALS & COMPLIANCE</h2>
+    <p style="text-align:center; max-width:800px; margin:20px auto; font-size:1.1em; line-height:1.6; color: white;">
+      We are committed to transparency, compliance, and legal responsibility.  
+      Please review our policies and regulatory disclaimers below.
+    </p>
+
+    <div style="display:flex; flex-wrap:wrap; justify-content:space-around; margin-top:40px;">
+
+      <!-- Privacy Policy -->
+      <div style="flex:1; min-width:280px; margin:15px; padding:25px; background:white; border-radius:10px; box-shadow: 0 9px 6px rgba(151, 120, 25, 0.5);">
+        <h3 style="color:orange; font-family: abril fatface;">PRIVACY POLICY</h3>
+        <p>
+          We respect and protect the privacy of all clients and debtors.  
+          Personal data is collected and used strictly in line with applicable laws.  
+          Information is never shared with third parties without consent, except where required by law.
+        </p>
+        <a href="#" style="color:orange; font-weight:bold; text-decoration:none;">Read More &raquo;</a>
+      </div>
+
+      <!-- Terms and Conditions -->
+      <div style="flex:1; min-width:280px; margin:15px; padding:25px; background:white; border-radius:10px; box-shadow: 0 9px 6px rgba(151, 120, 25, 0.5);">
+        <h3 style="color:orange; font-family: abril fatface;">TERMS AND CONDITIONS</h3>
+        <p>
+          By engaging our services, clients agree to our operating terms, including  
+          adherence to contracts, payment structures, and compliance requirements.  
+          Our terms ensure fair dealings and mutual accountability.
+        </p>
+        <a href="#" style="color:orange; font-weight:bold; text-decoration:none; ">Read More &raquo;</a>
+      </div>
+
+      <!-- Regulatory Disclaimers -->
+      <div style="flex:1; min-width:280px; margin:15px; padding:25px; background:white; border-radius:10px; box-shadow: 0 9px 6px rgba(151, 120, 25, 0.5);">
+        <h3 style="color:orange; font-family: abril fatface;">REGULATORY DISCLAIMERS</h3>
+        <p>
+          Our operations comply with Tanzanian regulations and, where applicable,  
+          international collection laws. Clients engaging us for cross-border services  
+          are subject to jurisdiction-specific compliance requirements.
+        </p>
+        <a href="#" style="color:orange; font-weight:bold; text-decoration:none;">Read More &raquo;</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- BLOG / INSIGHTS SECTION -->
+<section id="blog" style="padding:60px 20px; ">
+  <div style="max-width:1000px; margin:auto;">
+
+    <h2 style="color:orange; text-align:center; font-size:2.2em;font-family: abril fatface;">BLOG & INSIGHTS</h2>
+    <p style="text-align:center; max-width:800px; margin:20px auto; font-size:1.1em; line-height:1.6; color: white;">
+      Stay informed with our latest articles on finance, debt management, compliance, and recovery tips. 
+      Our insights help businesses manage debts efficiently and make informed financial decisions.
+    </p>
+
+    <div style="display:flex; flex-wrap:wrap; justify-content:space-around; margin-top:40px;">
+
+      <!-- Article 1 -->
+      <div style="flex:1; min-width:280px; margin:15px; padding:25px; background:#f9f9f9; border-radius:10px; box-shadow: 0 9px 6px rgba(151, 120, 25, 0.5);">
+        <h3 style="color:orange; font-family: abril fatface;">EFFECTIVE DEBT MANAGEMENT STRATEGIES</h3>
+        <p>Learn how businesses can structure repayment plans, prioritize collections, and reduce bad debts while maintaining client relationships.</p>
+        <a href="#" style="color:orange; font-weight:bold; text-decoration:none;">Read More &raquo;</a>
+      </div>
+
+      <!-- Article 2 -->
+      <div style="flex:1; min-width:280px; margin:15px; padding:25px; background:#f9f9f9; border-radius:10px;box-shadow: 0 9px 6px rgba(151, 120, 25, 0.5); ">
+        <h3 style="color:orange; font-family: abril fatface;">COMPLIANCE TIPS FOR DEBT COLLECTION</h3>
+        <p>Stay up-to-date with regulations and best practices for ethical debt recovery in Tanzania and internationally.</p>
+        <a href="#" style="color:orange; font-weight:bold; text-decoration:none;">Read More &raquo;</a>
+      </div>
+
+      <!-- Article 3 -->
+      <div style="flex:1; min-width:280px; margin:15px; padding:25px; background:#f9f9f9; border-radius:10px;box-shadow: 0 9px 6px rgba(151, 120, 25, 0.5);">
+        <h3 style="color:orange; font-family: abril fatface;">FINANCE TIPS FOR SMEs</h3>
+        <p>Discover practical advice for small and medium businesses to improve cash flow, manage accounts receivable, and prevent overdue debts.</p>
+        <a href="#" style="color:orange; font-weight:bold; text-decoration:none; ">Read More &raquo;</a>
+      </div>
+
+      <!-- Article 4 -->
+      <div style="flex:1; min-width:280px; margin:15px; padding:25px; background:#f9f9f9; border-radius:10px; box-shadow: 0 9px 6px rgba(151, 120, 25, 0.5);">
+        <h3 style="color:orange; font-family: abril fatface;">RECOVERY TIPS FOR BUSINESSES</h3>
+        <p>Learn actionable strategies to recover overdue debts efficiently while maintaining professionalism and trust with clients.</p>
+        <a href="#" style="color:orange; font-weight:bold; text-decoration:none;">Read More &raquo;</a>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT US SECTION -->
+<section id="contacts" style="padding:60px 20px; ">
+  <div style="max-width:1000px; margin:auto;">
+
+    <h2 style="color:orange; text-align:center; font-size:2.2em;font-family: abril fatface;">CONTACT US</h2>
+    <p style="text-align:center; max-width:800px; margin:20px auto; font-size:1.1em; line-height:1.6; color: white;">
+      Have questions or need assistance? Reach out to us through any of the channels below or fill out the form.
+    </p>
+
+    <div style="display:flex; flex-wrap:wrap; justify-content:space-between; margin-top:40px; gap:20px;">
+
+      <!-- Contact Info -->
+      <div style="flex:1; min-width:280px; background:white; padding:25px; border-radius:10px; box-shadow:0 3px 6px rgba(0,0,0,0.1);">
+        <h3 style="color:orange;
+        font-size: 1.6em; font-family: abril fatface;">GET IN TOUCH</h3>
+
+        <a href="tel:255788296274" style="color: black;text-decoration: none;"><p><strong style="font-family: abril fatface;">PHONE:</strong><span style="color: orange;"> +255 788 296 274</span></p></a>
+
+        <p><strong style="font-family: abril fatface;">EMAIL:</strong> Chachacollins8@gmail.com</p>
+
+        <p><strong style="font-family: abril fatface;">OFFICE:</strong> 123 Finance Street, Dar es Salaam, Tanzania</p>
+
+        <a href="https://wa.me/255788296274" target="_blank" style="display:inline-block; margin-top:15px; background:orange; color:white; border-radius:30px;
+        padding: 20px;  text-decoration:none; font-weight:bold; font-family: abril fatface;">CHAT ON WHATSAPP</a>
+      </div>
+
+      <!-- Contact Form -->
+      <div style="flex:1; min-width:280px; background:white; padding:25px; border-radius:10px; box-shadow:0 3px 6px rgba(0,0,0,0.1);">
+        <h3 style="color:orange; font-size: 1.6em; font-family: abril fatface;">SEND US A MESSAGE</h3>
+        <form id="whatsappForm" action="#" method="POST" style="display:flex; flex-direction:column; gap:15px;">
+          <input type="text" id="name" name="name" placeholder="Your Name" required style="padding:10px; border:1px solid #ccc; border-radius:5px;">
+          <input type="email" id="email" name="email" placeholder="Your Email" required style="padding:10px; border:1px solid #ccc; border-radius:5px;">
+          <textarea id="message" name="message" rows="5" placeholder="Your Message" required style="padding:10px; border:1px solid #ccc; border-radius:5px;"></textarea>
+          <a href="https://wa.me/255788296274" target="_blank"><button type="submit" style="background:orange; color:white; border:none; border-radius:30px; font-weight:bold;
+          padding:20px 50px ; cursor:pointer; font-family: abril fatface;">SUBMIT</button></a>
+        </form>
+      </div>
+
+    </div>
+
+    <!-- Map -->
+    <div id="location" style="margin-top:40px; border-radius:10px; overflow:hidden; box-shadow:0 3px 6px rgba(0,0,0,0.1);">
+      <iframe style="border-radius: 30px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1676.178228572488!2d39.275681053991896!3d-6.786295799631322!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x185c4c7cf661dfd5%3A0x36e3768e3538fb87!2sLeaders%20Club%20Grounds%2C%20Kinondoni!5e1!3m2!1sen!2stz!4v1755745002413!5m2!1sen!2stz"
+        width="100%" 
+        height="300"
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+
+  </div>
+</section>
+
+
+<footer style="background-color: orange;
+padding: 20px;
+text-align: center;
+color: white;
+font-family: abril fatface;">
+&copy;2025. HEKIMA DEBT COLLECTION AND AUCTIONEERS.<br>
+<p><a style="text-decoration: none;
+color: white;" href="https://instagram.com" target="_blank">Instagram</a> | <a style="text-decoration: none;
+color: white;" href="https://wa.me/255788296274" target="_blank">Whatsapp.</a></p>
+
+</footer>
+
+
+
+<script>
+document.getElementById("whatsappForm").addEventListener("submit", function(event) {
+  event.preventDefault(); // stop default form submission
+
+  // get input values
+  const name = document.getElementById("name").value;
+  const email = document.getElementById("email").value;
+  const message = document.getElementById("message").value;
+
+  // create the WhatsApp message text
+  const text = `Hello HEKIMA DEBT COLLECTORS,%0A%0AMy name is ${name}.%0AEmail: ${email}%0A%0AMessage:%0A${message}`;
+
+  // your WhatsApp number (no + or spaces)
+  const phoneNumber = "255788296274";
+
+  // open WhatsApp chat with message
+  window.open(`https://wa.me/${phoneNumber}?text=${text}`, "_blank");
+});
+</script>
+</body>
+</html>
